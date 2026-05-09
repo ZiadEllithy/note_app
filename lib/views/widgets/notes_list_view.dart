@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notes_app/views/widgets/my_floating_action_button.dart';
 import 'package:notes_app/views/widgets/note_card_widget.dart';
 
 class NotesListView extends StatelessWidget {
@@ -13,15 +14,7 @@ class NotesListView extends StatelessWidget {
             return const NoteCardWidget();
           },
         ),
-        Positioned(
-          right: 0,
-          bottom: 50,
-          child: FloatingActionButton(
-            backgroundColor: Color(0xff9cded5),
-            onPressed: () {},
-            child: const Icon(Icons.add, color: Colors.black),
-          ),
-        ),
+        Positioned(right: 0, bottom: 50, child: MyFloatingActionButton()),
       ],
     );
   }

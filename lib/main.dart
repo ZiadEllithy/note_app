@@ -15,7 +15,10 @@ class NotesAPP extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(brightness: Brightness.dark),
-      routes: {homePage: (context) => HomeView()},
+      routes: {
+        homePage: (context) => HomeView(),
+        // addNotePage: (context) => AddNoteView(),
+      },
       initialRoute: homePage,
     );
   }
