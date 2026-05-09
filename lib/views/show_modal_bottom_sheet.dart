@@ -14,7 +14,6 @@ class ShowModalBottomSheet extends StatelessWidget {
             bottom: MediaQuery.of(context).viewInsets.bottom,
           ),
           child: Column(
-            // mainAxisSize: MainAxisSize.min,
             children: [
               CustomTextField(hint: "title"),
 
