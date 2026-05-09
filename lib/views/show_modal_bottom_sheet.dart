@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notes_app/views/widgets/custom_text_field_widget.dart';
 
 class ShowModalBottomSheet extends StatelessWidget {
   const ShowModalBottomSheet({super.key});
@@ -15,36 +16,9 @@ class ShowModalBottomSheet extends StatelessWidget {
           child: Column(
             // mainAxisSize: MainAxisSize.min,
             children: [
-              Padding(
-                padding: EdgeInsets.only(bottom: 15.0),
-                child: TextField(
-                  decoration: InputDecoration(
-                    enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: Colors.white),
-                      borderRadius: BorderRadius.all(Radius.circular(10)),
-                    ),
-                    focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: Colors.white),
-                      borderRadius: BorderRadius.all(Radius.circular(10)),
-                    ),
-                    hintText: ("Title"),
-                  ),
-                ),
-              ),
-              TextField(
-                maxLines: 6,
-                decoration: InputDecoration(
-                  hintText: ("Content"),
-                  enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.white),
-                    borderRadius: BorderRadius.all(Radius.circular(10)),
-                  ),
-                  focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.white),
-                    borderRadius: BorderRadius.all(Radius.circular(10)),
-                  ),
-                ),
-              ),
+              CustomTextField(hint: "title"),
+
+              CustomTextField(hint: "Discription", maxLines: 6),
               SizedBox(height: 50),
               SizedBox(
                 height: 50,

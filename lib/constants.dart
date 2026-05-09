@@ -1,2 +1,2 @@
 const String homePage = "homePage";
-const String addNotePage = "addNotePage";
+const String editNotePage = "editNotePage";
