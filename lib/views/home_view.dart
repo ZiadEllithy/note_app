@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:notes_app/views/widgets/custom_app_bar_widget.dart';
-import 'package:notes_app/views/widgets/note_card_widget.dart';
 import 'package:notes_app/views/widgets/notes_list_view.dart';
 
 class HomeView extends StatelessWidget {

@@ -6,10 +6,23 @@ class NotesListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      itemBuilder: (context, index) {
-        return const NoteCardWidget();
-      },
+    return Stack(
+      children: [
+        ListView.builder(
+          itemBuilder: (context, index) {
+            return const NoteCardWidget();
+          },
+        ),
+        Positioned(
+          right: 0,
+          bottom: 50,
+          child: FloatingActionButton(
+            backgroundColor: Color(0xff9cded5),
+            onPressed: () {},
+            child: const Icon(Icons.add, color: Colors.black),
+          ),
+        ),
+      ],
     );
   }
 }
